@@ -8,7 +8,7 @@ $ mkdir work
 $ docker build -t howlinux .
 
 # work以下をdockerにマウント
-$ docker run -v work:/usr/local/src -itd howlinux /bin/bash
+$ docker run -v $HOME/work/how-linux-works/work:/usr/local/src -itd howlinux /bin/bash
 => <CONTAINER ID>
 
 $ docker attach <CONTAINER ID>

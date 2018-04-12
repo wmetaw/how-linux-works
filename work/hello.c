@@ -15,6 +15,7 @@ mmap( NULL, 8192, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0) = 
 access("/ etc/ ld. so. preload", R_OK) = -1
 ENOENT (No such file or directory)
 ...
+
 brk(NULL) = 0x917000
 brk(0x938000) = 0x938000
 write(1, "hello world\n", 12) = 12 ←①

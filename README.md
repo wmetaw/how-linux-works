@@ -5,11 +5,14 @@ $ cd $HOME/work
 $ git clone git@github.com:wmetaw/how-linux-works.git
 $ cd how-linux-works
 $ mkdir work
-$ docker image pull wmetaw/normallinux
+$ docker build -t howlinux .
 
 # work以下をdockerにマウント
-$ docker run -v $HOME/work/how-linux-works/work:/usr/local/src -itd wmetaw/normallinux /bin/bash
+$ docker run -v work:/usr/local/src -itd howlinux /bin/bash
 => <CONTAINER ID>
 
 $ docker attach <CONTAINER ID>
+
+# src
+$ cd /usr/local/src/
 ```
